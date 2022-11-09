@@ -34,6 +34,7 @@ export class FindAllDesenvolvedoresService {
 
     const [edges, count] = await this.desenvolvedoresRepository.findAndCount({
       ...getPaginationQueryData(rest),
+      order: { nome: 'ASC' },
       relations: ['nivel'],
       where,
     });

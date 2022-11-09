@@ -20,6 +20,7 @@ export class FindAllNiveisService {
 
     const [edges, count] = await this.niveisRepository.findAndCount({
       ...getPaginationQueryData(rest),
+      order: { nivel: 'ASC' },
       where,
     });
     return new EdgesPage(count, edges);

@@ -16,6 +16,7 @@ export class FindOneDesenvolvedorService {
       where: {
         id,
       },
+      relations: ['nivel'],
     });
 
     if (!desenvolvedor) {
