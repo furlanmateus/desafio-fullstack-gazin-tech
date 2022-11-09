@@ -25,7 +25,7 @@ export const DateInput = ({
 
     helpers.setValue(date);
   }
-  console.log(meta);
+
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <DatePicker

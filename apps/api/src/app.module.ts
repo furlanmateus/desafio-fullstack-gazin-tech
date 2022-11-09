@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DesenvolvedoresModule } from './desenvolvedores/desenvolvedores.module';
@@ -9,13 +10,10 @@ import { NiveisModule } from './niveis/niveis.module';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: 'root',
-      database: 'gazin-test',
+      url: process.env.DATABASE_URL,
       entities: [Nivel, Desenvolvedor],
       synchronize: true,
     }),

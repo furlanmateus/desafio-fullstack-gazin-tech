@@ -5,7 +5,7 @@ import { Desenvolvedor, DesenvolvedorPost } from '../types';
 
 const mapQueryParams = (params: ParsedQs): ParsedQs => {
   const { take, ...rest } = params;
-  console.log(rest);
+
   return {
     ...paginationParams(rest),
     take: take || '10',

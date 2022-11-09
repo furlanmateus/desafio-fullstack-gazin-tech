@@ -42,7 +42,6 @@ const useNiveis = () => {
   };
 
   const fetchPage = (page: number) => {
-    console.log(page);
     setPagination((curr) => ({ ...curr, page }));
   };
 

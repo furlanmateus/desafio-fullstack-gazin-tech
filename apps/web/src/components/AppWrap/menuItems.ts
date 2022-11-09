@@ -17,15 +17,15 @@ export const menuItens: Item[] = [
     Component: Home,
   },
   {
-    name: 'desenvolvedores',
-    label: 'Desenvolvedores',
-    pathname: '/desenvolvedores',
-    Component: Desenvolvedores,
-  },
-  {
     name: 'niveis',
     label: 'Níveis',
     pathname: '/niveis',
     Component: Niveis,
+  },
+  {
+    name: 'desenvolvedores',
+    label: 'Desenvolvedores',
+    pathname: '/desenvolvedores',
+    Component: Desenvolvedores,
   },
 ];

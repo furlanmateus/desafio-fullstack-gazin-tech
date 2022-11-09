@@ -18,7 +18,9 @@ const Niveis = () => {
         emptyFeedback={'Ops, não foi possível encontrar nenhum nível.'}
         actions={actions}
       />
-      <BasicPagination count={pagination.count} page={pagination.page} rowsPerPage={10} handleChange={fetchPage} />
+      {pagination.count > 0 && (
+        <BasicPagination count={pagination.count} page={pagination.page} rowsPerPage={10} handleChange={fetchPage} />
+      )}
       <AddFab
         onClick={() =>
           modalStore.showModal({

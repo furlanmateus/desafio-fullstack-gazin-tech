@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gazin-test
+      TZ: UTC
+    ports:
+      - '3306:3306'
+  api:
+    build: .
+    environment:
+      - DATABASE_URL=mysql://root:root@db:3306/gazin-test
+    depends_on:
+      - db
+    ports:
+      - 3030:3030
+    command: sh -c "/wait && yarn start"
+    volumes:
+      - .:/usr/src/app

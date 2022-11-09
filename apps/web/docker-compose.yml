@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  web:
+    container_name: dockerized-web-gazin-test
+    build: .
+    ports:
+      - '8080:8080'
+    volumes:
+      - .:/usr/src/app
