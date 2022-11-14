@@ -1,45 +1,59 @@
-## viterjs-template
+# Frontend - Desafio fullstack Gazin-Tech
 
-JavaScript + React + Redux + Mui + Axios + ESLint + Prettier
+## Descrição
 
-![viterjs-template](https://i.ibb.co/TksY3Pm/template-screenviter.png)
+<p>Frontend desenvolvido para a execução dos métodos desenvolvidos no Backend</p>
 
-### Getting Started
+## Tópicos
 
-#### Clone the repo
+<!--ts-->
 
+- [Descrição](#descrição)
+- [Features](#features)
+- [Pré-requisitos](#pré-requisitos)
+- [Executar](#executar)
+- [Tecnologias](#tecnologias)
+  <!--te-->
+
+## Features
+
+- [x] Listagem paginada de todos os níveis
+- [x] Busca de nível por ID
+- [x] Cadastro de nível
+- [x] Exclusão de nível
+- [x] Edição de nível
+- [x] Listagem paginada de todos os desenvolvedores
+- [x] Busca de desenvolvedor por ID
+- [x] Cadastro de desenvolvedor
+- [x] Exclusão de desenvolvedor
+- [x] Edição de desenvolvedor
+
+## Pré-requisitos
+
+<p>Para rodar o projeto são necessárias as tecnologias React e Docker</p>
+
+## Executar
+
+<p>Para subir o frontend basta rodar na pasta do projeto:</p>
+
+```bash
+docker-compose up -d
 ```
-npx degit emre-cil/viterjs-template my-app
+
+<p>A aplicação rodará na porta 8080:8080</p>
+
+<p>Caso deseje parar a execução do container, utilize:</p>
+
+```bash
+docker-compose down
 ```
 
-```
-cd my-app
-```
+## Tecnologias
 
-#### Install Dependencies
+<p>As seguintes ferramentas foram utilizadas na construção do projeto:</p>
 
-```
-pnpm install
-```
-
-#### Run
-
-```
-pnpm dev
-```
-
-
-### Scripts
-
-| Script        | Description                        |
-| ------------- | ---------------------------------- |
-| pnpm dev      | Runs the application.              |
-| pnpm build    | Create builds for the application. |
-| pnpm preview  | Runs the Vite preview              |
-| pnpm lint     | Display eslint errors              |
-| pnpm lint:fix | Fix the eslint errors              |
-| pnpm format   | Runs prettier for all files        |
-| pnpm test     | Run tests                          |
-
-
-### Check List
+- [React](https://reactjs.org/)
+- [Formik](https://formik.org/docs/overview)
+- [Yup](https://github.com/jquense/yup)
+- [MobX](https://mobx.js.org/)
+- [MaterialUI](https://mui.com/)
