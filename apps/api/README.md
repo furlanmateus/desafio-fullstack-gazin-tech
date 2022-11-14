@@ -44,7 +44,7 @@
 docker-compose up -d
 ```
 
-<p>Após subir os containers a API ficará alocada na porta 3030 (acesso por: http://localhost:3030 ) e o banco ficará alocado na porta 3006 </p>
+<p>Após subir os containers a API ficará alocada na porta 3030 (acesso por: http://localhost:3030) e o banco ficará alocado na porta 3006 </p>
 
 <p>Caso deseje parar a execução do container, utilize:</p>
 
