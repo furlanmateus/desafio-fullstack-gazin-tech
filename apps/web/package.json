@@ -26,9 +26,9 @@
   },
   "homepage": "https://github.com/emre-cil/viterjs-template#readme",
   "scripts": {
-    "dev": "vite --port 8080 --host",
-    "start": "vite --port 8080 --host",
-    "host": "vite --open --host",
+    "dev": "vite --port 8080",
+    "start": "vite --port 8080",
+    "host": "vite --open",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",

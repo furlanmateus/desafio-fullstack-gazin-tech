@@ -9,7 +9,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
-import MenuItens from './MenuItems';
+import MenuItens from './MenuItens';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 
